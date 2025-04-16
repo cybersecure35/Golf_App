@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Score Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Golf Score Tracker - Bull Creek East</h1>
+    <form method="POST">
+        <div>
+            <label for="players">Enter Player Names:</label>
+            <input type="text" name="players" placeholder="Player 1, Player 2" required>
+        </div>
+        <h3>Score Input:</h3>
+        {% for hole in holes %}
+        <div>
+            <label>Hole {{ hole.hole }} (Par {{ hole.par }} - {{ hole.yardage }} yards):</label>
+            {% for player in request.form.getlist('players') %}
+            <input type="number" name="score_{{ player }}_{{ hole.hole }}" placeholder="Score">
+            {% endfor %}
+        </div>
+        {% endfor %}
+        <button type="submit">Submit Scores</button>
+    </form>
+</body>
+</html>
