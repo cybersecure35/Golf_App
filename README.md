@@ -1,5 +1,5 @@
 
-# Golf Score Tracking App �️
+# Golf Score Tracking App
 
 A Python Flask web application for tracking golf scores across multiple players and custom courses. The app runs locally and provies a browser-based interface for easy score input and round tracking.
 
