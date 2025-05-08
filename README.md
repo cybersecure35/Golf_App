@@ -1,9 +1,9 @@
 
-# Golf Score Tracking App 🏌️‍♂️
+# Golf Score Tracking App �️
 
 A Python Flask web application for tracking golf scores across multiple players and custom courses. The app runs locally and provies a browser-based interface for easy score input and round tracking.
 
-## 📌 Features
+##  Features
 
 - Track scores for individual or multiple players
 - Uses a local popular course complete with yardages and pin placements
@@ -14,9 +14,9 @@ A Python Flask web application for tracking golf scores across multiple players 
 ## Tech Stack
 
 - **Python 3**
-- **SQLite3** for data persistence
+- **SQLite3** 
 - **Object-Oriented Programming**
-- **Command-Line Interface (CLI)**
+- **Graphical User Interface (GUI)**
 
 ## How to Run
 
@@ -30,24 +30,17 @@ A Python Flask web application for tracking golf scores across multiple players 
    ```bash
    python main.py
 
-What I Learned
-	•	Implementing object-oriented structure for managing players and courses
-	•	Using SQLite to persist game data
-	•	Handling edge cases and invalid user input gracefully
+## What I Learned
+• Implementing object-oriented structure for managing players and courses
+
+• Using SQLite to persist game data
+
+• Handling edge cases and invalid user input gracefully
 
 
-📂 File Structure
-
-Golf_App/
-├── main.py
-├── course.py
-├── player.py
-├── database.db
-└── README.md
-
-🧩 Future Improvements
-	•	Add support for exporting scorecards as PDFs
-	•	Integrate weather API to display real-time weather during gameplay
+## Future Improvements
+• Add support for exporting scorecards as PDFs
+• Integrate weather API to display real-time weather during gameplay
  
 
 
